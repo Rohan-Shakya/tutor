@@ -1,0 +1,541 @@
+/*=============================================
+=            Header                           =
+=============================================*/
+
+.header {
+  position: fixed;
+  width: 100%;
+  background: transparent;
+  color: var(--white);
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+}
+
+.header.fixed {
+  padding: 0.5rem 1rem;
+  background: var(--primary-dark);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 300;
+  z-index: 2;
+}
+
+/*=============================================
+=            Header - Logo                    =
+=============================================*/
+#header__logo {
+  font-size: 1.8rem;
+  color: var(--white);
+}
+
+#header__logo img {
+  width: 2.7rem;
+}
+
+#header__logo span {
+  margin-left: -15px;
+}
+
+/*=============================================
+=            Header - Nav                     =
+=============================================*/
+
+.header__nav-box {
+  display: flex;
+  font-weight: 400;
+  flex: 0 0 60%;
+}
+
+.header__nav-list {
+  margin: 0 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.header__nav-list:hover {
+  color: var(--primary-color);
+}
+
+/*=============================================
+=            Header - Buttons            =
+=============================================*/
+.header__buttons {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 0 25%;
+}
+
+.signup-btn,
+.login-btn,
+.categories-btn {
+  background: transparent;
+  color: var(--white);
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.signup-btn a,
+.login-btn a,
+.categories-btn a {
+  margin-left: 0.5rem;
+}
+
+.signup-btn:hover,
+.login-btn:hover,
+.categories-btn:hover {
+  color: var(--primary-color);
+}
+
+/*=====  End of Header  ======*/
+
+/*=============================================
+=            Banner                          =
+=============================================*/
+
+#banner {
+  position: relative;
+  background: url(/assets/banner.jpg);
+  min-height: 60vh;
+  height: 85vh;
+  padding-top: 7rem;
+}
+
+#banner::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(34, 42, 53, 0.7);
+}
+
+.banner__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  color: var(--white);
+  align-items: center;
+  margin-top: 10%;
+}
+
+.banner__left {
+  flex: 0 0 40%;
+}
+
+.banner__left p {
+  margin: 1rem 0 2rem;
+}
+
+.banner__left-form {
+  display: flex;
+  align-items: center;
+}
+
+.banner__left-form .form-control {
+  background-color: transparent;
+  border: 1px solid var(--white);
+  height: 3rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.8rem;
+}
+
+.banner__left-form .form-control i {
+  font-size: 1.2rem;
+}
+
+.banner__left-form .form-control .form-input {
+  background-color: transparent;
+  border: 0;
+  color: var(--white);
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.form-btn {
+  padding: 0.5rem 1rem;
+  height: 3rem;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 1rem;
+  width: 10rem;
+  border: 3px solid var(--primary-color);
+  margin-left: 1.5rem;
+}
+
+.form-btn:hover {
+  background-color: transparent;
+}
+
+.banner__right {
+  flex: 0 0 30%;
+}
+
+.banner__right-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.course-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 6rem;
+  height: 6rem;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  margin: 0.5rem;
+  padding: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.course-box:hover {
+  background-color: var(--white);
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.course-box img {
+  width: 2.5rem;
+  height: auto;
+  color: var(--white);
+}
+
+.course-box p {
+  font-size: 0.9rem;
+}
+
+/*=====  End of Banner  ======*/
+
+/*=============================================
+=            Features                        =
+=============================================*/
+
+#feature {
+  padding: 3rem 1rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.feature__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature__box {
+  display: flex;
+}
+
+.feature__box img {
+  width: 3rem;
+}
+
+.feature__box .media-body {
+  margin-left: 1rem;
+}
+
+.feature__box .media-body p {
+  font-weight: 300;
+}
+
+/*=====  End of Features  ======*/
+
+/*=============================================
+=            Section Courses                  =
+=============================================*/
+
+.courses__container {
+  padding: 5rem 1rem;
+}
+
+.courses__container-filter {
+  margin: 2rem 2rem 1rem;
+}
+
+[data-filter="trending"],
+[data-filter="popular"],
+[data-filter="recent"],
+[data-filter="certificated"] {
+  margin: 0.3rem 1rem;
+  padding: 0.2rem;
+}
+
+[data-filter="trending"] {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.course-item__container {
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.course-item {
+  flex: 0 0 27%;
+  border: 1px solid rgba(92, 177, 0, 0.3);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 1.5rem;
+}
+
+.course-item-media {
+  width: 100%;
+  height: fit-content;
+}
+
+.course-item-media img {
+  width: 100%;
+}
+
+.course-item-content {
+  padding: 1rem;
+}
+
+.course-item-star-rating {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.course-item-star-rating img {
+  width: 1rem;
+  margin: 0 0.2rem;
+}
+
+.course-item-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.course-item-tag-link {
+  border: 1px solid var(--primary-color);
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  margin: 0.5rem 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.course-item-tag-link:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+/*=====  End of Section Courses  ======*/
+
+/*=============================================
+=            Section Special Banner            =
+=============================================*/
+
+#special__banner {
+  background: url(/assets/call-to-action.jpg) fixed center/cover no-repeat;
+  padding: 10rem 1rem;
+  position: relative;
+}
+
+#special__banner:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.special__banner__container {
+  position: relative;
+  color: var(--white);
+  z-index: 1;
+}
+
+.special__banner__container h3 {
+  margin: 2rem 0;
+}
+
+.special__banner__container button {
+  margin: 0;
+}
+
+/*=====  End of Section Special Banner  ======*/
+
+/*=============================================
+=            Section Categories               =
+=============================================*/
+.categories__container {
+  padding: 5rem 1rem;
+}
+
+.categories-item__container {
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.categories-item {
+  flex: 0 0 27%;
+  border: 1px solid rgba(92, 177, 0, 0.3);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 1.5rem;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.categories-item:hover {
+  background-color: rgba(92, 177, 0, 0.05);
+}
+
+.categories-item-media img {
+  width: 5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.categories-item:hover img {
+  transform: scale(1.1);
+}
+
+.categories-item-content p {
+  color: rgba(0, 0, 0, 0.6);
+  line-height: normal;
+  margin: 1rem 0;
+}
+
+/*=====  End of Section Categories  ======*/
+
+/*=============================================
+=            Section Testimonials            =
+=============================================*/
+#testimonials {
+  padding: 5rem 0;
+  background-color: rgba(92, 177, 0, 0.2);
+  text-align: center;
+}
+
+.testimonials__image {
+  margin: 2rem auto;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 7rem;
+  width: 7rem;
+}
+
+.testimonials__image img {
+  object-fit: fill;
+  width: 7rem;
+}
+
+.testimonials__description p {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.quote {
+  margin: 2rem auto;
+}
+
+/*=====  End of Section Testimonials  ======*/
+
+/*=============================================
+=            Section Partners                =
+=============================================*/
+#partners {
+  padding: 5rem 0;
+}
+
+.partner__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.partner__item {
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+}
+
+.partner__item:hover {
+  opacity: 1;
+}
+/*=====  End of Section Partners ======*/
+
+/*=============================================
+=            Footer            =
+=============================================*/
+.footer {
+  background-color: var(--primary-dark);
+  color: var(--white);
+}
+
+.footer__container {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer__description {
+  padding: 0 2rem;
+}
+
+.footer__links {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__links .link {
+  display: flex;
+  align-items: flex-start;
+  margin: 0.5rem 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__links .link:hover {
+  color: var(--primary-color);
+}
+
+.footer__links .link i {
+  margin-right: 0.5rem;
+}
+
+.footer__contacts {
+  padding: 0 2rem;
+}
+
+.footer__contacts .footer__contact {
+  display: flex;
+  align-items: flex-start;
+  margin: 1rem 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__contacts .footer__contact i {
+  margin-right: 0.5rem;
+}
+
+/*=====  End of Footer  ======*/
+
+/*=============================================
+=            Section Copyright                =
+=============================================*/
+.page__copyright {
+  background: var(--secondary-dark);
+  color: var(--white);
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/*=====  End of Section Copyright   ======*/

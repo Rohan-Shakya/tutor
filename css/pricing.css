@@ -1,0 +1,315 @@
+/*=============================================
+=            Header                           =
+=============================================*/
+
+.header {
+  position: fixed;
+  width: 100%;
+  background: transparent;
+  color: var(--white);
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+}
+
+.header.fixed {
+  padding: 0.5rem 1rem;
+  background: var(--primary-dark);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 300;
+  z-index: 2;
+}
+
+/*=============================================
+    =            Header - Logo                    =
+    =============================================*/
+#header__logo {
+  font-size: 1.8rem;
+  color: var(--white);
+}
+
+#header__logo img {
+  width: 2.7rem;
+}
+
+#header__logo span {
+  margin-left: -15px;
+}
+
+/*=============================================
+    =            Header - Nav                     =
+    =============================================*/
+
+.header__nav-box {
+  display: flex;
+  font-weight: 400;
+  flex: 0 0 60%;
+}
+
+.header__nav-list {
+  margin: 0 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.header__nav-list:hover {
+  color: var(--primary-color);
+}
+
+/*=============================================
+    =            Header - Buttons            =
+    =============================================*/
+.header__buttons {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 0 25%;
+}
+
+.signup-btn,
+.login-btn,
+.categories-btn {
+  background: transparent;
+  color: var(--white);
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.signup-btn a,
+.login-btn a,
+.categories-btn a {
+  margin-left: 0.5rem;
+}
+
+.signup-btn:hover,
+.login-btn:hover,
+.categories-btn:hover {
+  color: var(--primary-color);
+}
+
+/*=====  End of Header  ======*/
+
+/*=============================================
+    =            Banner                          =
+    =============================================*/
+
+#banner {
+  position: relative;
+  background: url(/assets/title-bg.jpg);
+  min-height: 45vh;
+  height: 45vh;
+  padding-top: 7rem;
+}
+
+#banner::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(34, 42, 53, 0.7);
+}
+
+.banner__container {
+  position: relative;
+  color: var(--white);
+  align-items: center;
+  margin-top: 5%;
+}
+
+.banner__container h1 {
+  font-size: 3.5rem;
+  margin: 1rem 0;
+}
+
+.banner__container .page__route {
+  margin: 2rem 0;
+  word-spacing: 0.8rem;
+}
+
+.page__route span {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/*=====  End of Banner  ======*/
+
+/*=============================================
+=            Section Pricing            =
+=============================================*/
+
+#pricing {
+  padding: 5rem 0;
+}
+
+.pricing__container {
+  text-align: center;
+}
+
+.pricing__container > .paragraph {
+  margin: 1rem 0;
+}
+
+.pricing__table {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 0;
+}
+
+.pricing__item {
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  width: 350px;
+  padding: 2rem 4rem;
+  text-align: center;
+}
+
+.pricing__item.active {
+  background-color: var(--primary-dark);
+  color: var(--white);
+}
+
+.price {
+  margin: 1rem 0;
+  display: flex;
+  position: relative;
+}
+
+.price span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgba(34, 42, 53, 0.7);
+  position: absolute;
+  left: 22%;
+}
+
+.pricing__item.active .price span {
+  color: rgb(177, 177, 177);
+}
+
+.price p {
+  position: absolute;
+  top: 50px;
+  left: 72%;
+  color: rgba(34, 42, 53, 0.7);
+}
+
+.pricing__item.active .price p {
+  color: rgb(177, 177, 177);
+}
+
+.price__amount {
+  margin: 0 2rem;
+  font-size: 4rem;
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+
+.features {
+  text-align: left;
+  margin-top: 6rem;
+}
+
+.features > li {
+  margin: 1rem 0;
+}
+
+.features > li > span {
+  margin-left: 10px;
+}
+
+.btn-primary {
+  padding: 0.5rem 1rem;
+  height: 3rem;
+
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 1rem;
+  width: 100%;
+  border: 3px solid var(--primary-color);
+  margin: 1rem 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+/*=====  End of Section Pricing  ======*/
+
+/*=============================================
+    =            Footer            =
+    =============================================*/
+.footer {
+  background-color: var(--primary-dark);
+  color: var(--white);
+}
+
+.footer__container {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer__description {
+  padding: 0 2rem;
+}
+
+.footer__links {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__links .link {
+  display: flex;
+  align-items: flex-start;
+  margin: 0.5rem 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__links .link:hover {
+  color: var(--primary-color);
+}
+
+.footer__links .link i {
+  margin-right: 0.5rem;
+}
+
+.footer__contacts {
+  padding: 0 2rem;
+}
+
+.footer__contacts .footer__contact {
+  display: flex;
+  align-items: flex-start;
+  margin: 1rem 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__contacts .footer__contact i {
+  margin-right: 0.5rem;
+}
+
+/*=====  End of Footer  ======*/
+
+/*=============================================
+    =            Section Copyright                =
+    =============================================*/
+.page__copyright {
+  background: var(--secondary-dark);
+  color: var(--white);
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/*=====  End of Section Copyright   ======*/

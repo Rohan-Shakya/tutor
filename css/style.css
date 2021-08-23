@@ -1,0 +1,80 @@
+/*===========================================================
+=            Tutor - Online Tutorial and Courses            =
+============================================================*/
+
+:root {
+  --primary-color: #5cb100;
+  --primary-dark: #222a35;
+  --secondary-dark: #2a323c;
+  --white: #fff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*=============================================
+=            Typography                       =
+=============================================*/
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: 0;
+  outline: none;
+}
+
+input {
+  border: 0;
+  outline: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.heading-primary {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.heading-secondary {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.heading-tertiary {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.paragraph {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*=====  End of Tutor - Online Tutorial and Courses  ======*/

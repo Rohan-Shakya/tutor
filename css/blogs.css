@@ -1,0 +1,369 @@
+/*=============================================
+=            Header                           =
+=============================================*/
+
+.header {
+  position: fixed;
+  width: 100%;
+  background: transparent;
+  color: var(--white);
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+}
+
+.header.fixed {
+  padding: 0.5rem 1rem;
+  background: var(--primary-dark);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 300;
+  z-index: 2;
+}
+
+/*=============================================
+      =            Header - Logo                    =
+      =============================================*/
+#header__logo {
+  font-size: 1.8rem;
+  color: var(--white);
+}
+
+#header__logo img {
+  width: 2.7rem;
+}
+
+#header__logo span {
+  margin-left: -15px;
+}
+
+/*=============================================
+      =            Header - Nav                     =
+      =============================================*/
+
+.header__nav-box {
+  display: flex;
+  font-weight: 400;
+  flex: 0 0 60%;
+}
+
+.header__nav-list {
+  margin: 0 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.header__nav-list:hover {
+  color: var(--primary-color);
+}
+
+/*=============================================
+      =            Header - Buttons            =
+      =============================================*/
+.header__buttons {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 0 25%;
+}
+
+.signup-btn,
+.login-btn,
+.categories-btn {
+  background: transparent;
+  color: var(--white);
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.signup-btn a,
+.login-btn a,
+.categories-btn a {
+  margin-left: 0.5rem;
+}
+
+.signup-btn:hover,
+.login-btn:hover,
+.categories-btn:hover {
+  color: var(--primary-color);
+}
+
+/*=====  End of Header  ======*/
+
+/*=============================================
+      =            Banner                          =
+      =============================================*/
+
+#banner {
+  position: relative;
+  background: url(/assets/title-bg.jpg);
+  min-height: 45vh;
+  height: 45vh;
+  padding-top: 7rem;
+}
+
+#banner::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(34, 42, 53, 0.7);
+}
+
+.banner__container {
+  position: relative;
+  color: var(--white);
+  align-items: center;
+  margin-top: 5%;
+}
+
+.banner__container h1 {
+  font-size: 3.5rem;
+  margin: 1rem 0;
+}
+
+.banner__container .page__route {
+  margin: 2rem 0;
+  word-spacing: 0.8rem;
+}
+
+.page__route span {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/*=====  End of Banner  ======*/
+
+/*=============================================
+=            Section Blogs            =
+=============================================*/
+
+#blogs {
+  padding: 5rem 0;
+}
+
+.blogs__container {
+  display: flex;
+}
+
+.blogs__left {
+  flex: 0 0 30%;
+  margin-right: 2rem;
+}
+
+.blogs__left .blogs__search {
+  background-color: var(--primary-dark);
+  color: var(--white);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.form-control {
+  margin: 1rem 0;
+  background-color: var(--white);
+  height: 2rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.8rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.form-control i {
+  font-size: 1.2rem;
+}
+
+.form-control .form-input {
+  background-color: transparent;
+  border: 0;
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.blogs__left .tags {
+  margin: 2rem 0;
+}
+
+.blogs__left .tags__container {
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blogs__left .tag-link {
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  padding: 2px 5px;
+  margin: 0 10px 10px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.blogs__left .tag-link:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.blogs__left .popular__blogs {
+  margin: 1rem 0;
+}
+
+.blogs__left .popular__blogs .popular__item {
+  margin: 1rem 0;
+  display: flex;
+  border: 1px solid rgba(92, 179, 0, 0.3);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.blogs__left .popular__item img {
+  width: 120px;
+}
+
+.blogs__left .popular__item .popular__content {
+  padding: 1rem;
+}
+
+.blogs__left .popular__item .date {
+  margin: 10px 0 0;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.blogs__right {
+  flex: 1;
+}
+
+.blog__item {
+  width: 100%;
+  border: 1px solid rgba(92, 179, 0, 0.3);
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 0 2rem;
+}
+
+.blog__item img {
+  width: 100%;
+  height: 300px;
+}
+
+.blog__item .blog__content {
+  padding: 1rem 2rem;
+}
+
+.blog__item .blog__content h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.blog__item .row {
+  display: flex;
+  justify-content: space-between;
+  color: var(--primary-color);
+}
+
+.blog__item .row i {
+  margin-right: 10px;
+}
+
+.blog__item .blog__content p {
+  margin: 1rem 0;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.btn-primary {
+  padding: 0.5rem 1rem;
+  height: 3rem;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 1rem;
+  width: 100%;
+  border: 3px solid var(--primary-color);
+  margin: 1rem 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary i {
+  margin-left: 1rem;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--primary-dark);
+}
+
+/*=====  End of Section Blogs  ======*/
+
+/*=============================================
+=            Footer            =
+ =============================================*/
+.footer {
+  background-color: var(--primary-dark);
+  color: var(--white);
+}
+
+.footer__container {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer__description {
+  padding: 0 2rem;
+}
+
+.footer__links {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__links .link {
+  display: flex;
+  align-items: flex-start;
+  margin: 0.5rem 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__links .link:hover {
+  color: var(--primary-color);
+}
+
+.footer__links .link i {
+  margin-right: 0.5rem;
+}
+
+.footer__contacts {
+  padding: 0 2rem;
+}
+
+.footer__contacts .footer__contact {
+  display: flex;
+  align-items: flex-start;
+  margin: 1rem 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__contacts .footer__contact i {
+  margin-right: 0.5rem;
+}
+
+/*=====  End of Footer  ======*/
+
+/*=============================================
+      =            Section Copyright                =
+      =============================================*/
+.page__copyright {
+  background: var(--secondary-dark);
+  color: var(--white);
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/*=====  End of Section Copyright   ======*/
