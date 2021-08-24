@@ -234,7 +234,7 @@
   font-size: 1.2rem;
 }
 
-.btn-primary {
+.btn-form {
   padding: 0.5rem 1rem;
   height: 3rem;
   border-radius: 5px;
@@ -248,8 +248,9 @@
   cursor: pointer;
 }
 
-.btn-primary:hover {
+.btn-form:hover {
   background-color: transparent;
+  color: var(--primary-color);
 }
 
 /*=====  End of Section Special Banner  ======*/
