@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="assets/logo.png" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/auth.css" />
+
+    <title>Sign Up</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#f6f5f7" />
+    <meta
+      name="description"
+      content="Tutor is an online learning and teaching platform with over 100s of courses and 1 million students. Learn programming, web development, data science and more."
+    />
+    <meta name="keywords" content="tutor, online tutorial, online courses" />
+    <meta name="subject" content="Online Tutorial and Courses" />
+  </head>
+  <body>
+    <!-- ================= Header ======================= -->
+    <header class="header">
+      <div class="container">
+        <div class="header__container">
+          <a href="/index.html" id="header__logo">
+            <img src="/assets/logo.png" alt="Tutor" />
+            <span class="header__logo-text">utor</span>
+          </a>
+          <nav class="header__nav">
+            <ul class="header__nav-box">
+              <li class="header__nav-list">
+                <a href="/index.html">Home</a>
+              </li>
+              <li class="header__nav-list">
+                <a href="/about.html">About Us</a>
+              </li>
+              <li class="header__nav-list">
+                <a href="/contact.html">Contact Us</a>
+              </li>
+              <li class="header__nav-list">
+                <a href="/pricing.html">Pricing</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__buttons">
+            <button class="signup-btn">
+              <i class="fas fa-sign-in-alt"></i>
+              <a href="/signup.html">Sign Up</a>
+            </button>
+            <button class="login-btn">
+              <i class="fas fa-user"></i>
+              <a href="/login.html">Log In</a>
+            </button>
+            <button class="categories-btn">
+              <i class="fas fa-bars"></i>
+              <a href="/categories.html">Categories</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===================== End of Header ========================= -->
+
+    <main id="signup">
+      <div class="container">
+        <div class="signup__container">
+          <h1 class="heading-primary">Sign Up</h1>
+          <p class="paragraph">
+            Sign up to save your progress and obtain a certificate in Alison’s
+            free Diploma in Web
+          </p>
+          <form class="form">
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email address"
+              required
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+
+            <button class="btn-primary">
+              Sign up <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+
+          <h2 class="heading-secondary">or</h2>
+          <h3 class="heading-tertiary">Sign up with your Social Account</h3>
+          <ul class="social__links">
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook" title="facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-twitter" title="twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-linkedin" title="linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-instagram" title="instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-youtube" title="youtube"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="agreements">
+            <div class="row">
+              <input type="checkbox" name="agree" />
+              <span>I agree to the Terms and Conditions </span>
+            </div>
+            <div class="row">
+              <input type="checkbox" name="updates" />
+              <span
+                >Yes, I want to get the most out of Tutor by receiving tips,
+                updates and exclusive offers.
+              </span>
+            </div>
+          </div>
+
+          <div class="heading-secondary">
+            Already have an Tutor account?
+            <a href="/login.html" class="link">Log In</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="page__copyright">
+      <div class="container">
+        <p class="paragraph">
+          &copy; <span class="copyright_year">2021</span> Tutor Copyright
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

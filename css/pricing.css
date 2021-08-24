@@ -227,7 +227,7 @@
 .btn-primary {
   padding: 0.5rem 1rem;
   height: 3rem;
-
+  cursor: pointer;
   border-radius: 5px;
   background-color: var(--primary-color);
   color: var(--white);
@@ -264,6 +264,10 @@
   padding: 0 2rem;
 }
 
+.footer__description > p {
+  margin: 1rem 0;
+}
+
 .footer__links {
   padding: 0 2rem;
   display: flex;
@@ -286,6 +290,7 @@
 }
 
 .footer__contacts {
+  width: 30rem;
   padding: 0 2rem;
 }
 

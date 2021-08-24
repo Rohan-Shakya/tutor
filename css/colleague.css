@@ -156,6 +156,20 @@
   margin: 2rem 0;
 }
 
+.colleagues__item-media {
+  overflow: hidden;
+  width: 100%;
+  height: 22rem;
+}
+
+.colleagues__item-media img {
+  transition: all 0.3s ease-in-out;
+}
+
+.colleagues__item:hover img {
+  transform: scale(1.1);
+}
+
 .colleague__container .paragraph {
   color: rgba(34, 42, 53, 0.8);
 }
@@ -255,6 +269,10 @@
   padding: 0 2rem;
 }
 
+.footer__description > p {
+  margin: 1rem 0;
+}
+
 .footer__links {
   padding: 0 2rem;
   display: flex;
@@ -277,6 +295,7 @@
 }
 
 .footer__contacts {
+  width: 30rem;
   padding: 0 2rem;
 }
 

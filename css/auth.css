@@ -1,0 +1,177 @@
+/*=============================================
+=            Header                           =
+=============================================*/
+
+.header {
+  position: fixed;
+  width: 100%;
+  background: var(--primary-dark);
+  color: var(--white);
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 300;
+  z-index: 2;
+}
+
+/*=============================================
+  =            Header - Logo                    =
+   =============================================*/
+#header__logo {
+  font-size: 1.8rem;
+  color: var(--white);
+}
+
+#header__logo img {
+  width: 2.7rem;
+}
+
+#header__logo span {
+  margin-left: -15px;
+}
+
+/*=============================================
+   =            Header - Nav                     =
+   =============================================*/
+
+.header__nav-box {
+  display: flex;
+  font-weight: 400;
+  flex: 0 0 60%;
+}
+
+.header__nav-list {
+  margin: 0 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.header__nav-list:hover {
+  color: var(--primary-color);
+}
+
+/*=============================================
+   =            Header - Buttons            =
+  =============================================*/
+.header__buttons {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 0 25%;
+}
+
+.signup-btn,
+.login-btn,
+.categories-btn {
+  background: transparent;
+  color: var(--white);
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.signup-btn a,
+.login-btn a,
+.categories-btn a {
+  margin-left: 0.5rem;
+}
+
+.signup-btn:hover,
+.login-btn:hover,
+.categories-btn:hover {
+  color: var(--primary-color);
+}
+
+/*=====  End of Header  ======*/
+
+#signup,
+#login {
+  min-height: calc(100vh - 3.5rem);
+  padding: 7rem;
+  text-align: center;
+}
+
+#signup h1,
+#login h1 {
+  margin: 1rem 0;
+}
+
+.social__links {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__links > li {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin: 0 0.5rem;
+}
+
+.form {
+  margin: 2rem auto;
+  max-width: 30rem;
+}
+
+.form input {
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--primary-color);
+  width: 100%;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  padding: 0.5rem 1rem;
+  height: 3rem;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 1rem;
+  width: 100%;
+  border: 3px solid var(--primary-color);
+  margin: 1rem 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--primary-dark);
+}
+
+.agreements {
+  text-align: center;
+  margin: 1rem 0;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.row > input {
+  margin-right: 1rem;
+}
+
+.link {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+/*=============================================
+   =            Section Copyright                =
+   =============================================*/
+.page__copyright {
+  background: var(--secondary-dark);
+  color: var(--white);
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/*=====  End of Section Copyright   ======*/

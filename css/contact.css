@@ -255,6 +255,10 @@
   padding: 0 2rem;
 }
 
+.footer__description > p {
+  margin: 1rem 0;
+}
+
 .footer__links {
   padding: 0 2rem;
   display: flex;
@@ -277,6 +281,7 @@
 }
 
 .footer__contacts {
+  width: 30rem;
   padding: 0 2rem;
 }
 
