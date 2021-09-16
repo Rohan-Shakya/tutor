@@ -32,8 +32,13 @@
     />
     <meta name="keywords" content="tutor, online tutorial, online courses" />
     <meta name="subject" content="Online Tutorial and Courses" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
   </head>
-  <body>
+  <body style="overflow-x: hidden">
     <!-- ================= Header ======================= -->
     <header class="header">
       <div class="container">
@@ -102,106 +107,72 @@
           <p class="paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
-          <div class="pricing__table">
-            <!-- Pricing Table 1 -->
-            <div class="pricing__item">
-              <h1 class="heading-heading">Limited</h1>
-              <div class="price">
-                <span>$</span>
-                <h1 class="price__amount">20</h1>
-                <p>/month</p>
-              </div>
-              <ul class="features">
-                <li>
-                  <i class="far fa-user"></i>
-                  <span>3 User</span>
-                </li>
-                <li>
-                  <i class="far fa-comments"></i>
-                  <span>Basic Support</span>
-                </li>
-                <li>
-                  <i class="far fa-edit"></i>
-                  <span>All Features included</span>
-                </li>
-                <li>
-                  <i class="far fa-thumbs-up"></i>
-                  <span>Participant Dial Out</span>
-                </li>
-                <li>
-                  <i class="far fa-check-square"></i>
-                  <span>Web Interface</span>
-                </li>
-              </ul>
-              <button class="btn btn-primary">Get Started</button>
+          <section class="pricing__table">
+            <div class="container">
+              <table class="pricing_table__container">
+                <tr>
+                  <th class="heading-secondary" style="font-weight: 600">
+                    S. No.
+                  </th>
+                  <th class="heading-secondary" style="font-weight: 600">
+                    Limited
+                  </th>
+                  <th class="heading-secondary" style="font-weight: 600">
+                    Unlimited
+                  </th>
+                  <th class="heading-secondary" style="font-weight: 600">
+                    Premium
+                  </th>
+                </tr>
+                <tr>
+                  <td class="heading-tertiary" style="font-weight: 500">
+                    <i class="fas fa-dollar-sign"></i> Monthly Price
+                  </td>
+                  <td class="heading-primary">$20</td>
+                  <td class="heading-primary">$25</td>
+                  <td class="heading-primary">$35</td>
+                </tr>
+                <tr>
+                  <td class="heading-tertiary" style="font-weight: 500">
+                    <i class="far fa-user"></i> Users
+                  </td>
+                  <td>3 users</td>
+                  <td>3 users</td>
+                  <td>5 users</td>
+                </tr>
+                <tr>
+                  <td class="heading-tertiary" style="font-weight: 500">
+                    <i class="far fa-comments"></i> Supports
+                  </td>
+                  <td>Basic Support</td>
+                  <td>Basic Support</td>
+                  <td>Full Support</td>
+                </tr>
+                <tr>
+                  <td class="heading-tertiary" style="font-weight: 500">
+                    <i class="far fa-check-square"></i> Interface
+                  </td>
+                  <td>Web Interface</td>
+                  <td>Web Interface</td>
+                  <td>Mobile & Web Interface</td>
+                </tr>
+                <tr>
+                  <td class="heading-tertiary" style="font-weight: 500">
+                    <i class="far fa-edit"></i> Features
+                  </td>
+                  <td>All Features included</td>
+                  <td>All Features included</td>
+                  <td>All Features included</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><button class="btn btn-primary">Get Started</button></td>
+                  <td><button class="btn btn-primary">Get Started</button></td>
+                  <td><button class="btn btn-primary">Get Started</button></td>
+                </tr>
+              </table>
             </div>
-
-            <!-- Pricing Table 2 -->
-            <div class="pricing__item active">
-              <h1 class="heading-heading">Unlimited</h1>
-              <div class="price">
-                <span>$</span>
-                <h1 class="price__amount">25</h1>
-                <p>/month</p>
-              </div>
-              <ul class="features">
-                <li>
-                  <i class="far fa-user"></i>
-                  <span>3 User</span>
-                </li>
-                <li>
-                  <i class="far fa-comments"></i>
-                  <span>Basic Support</span>
-                </li>
-                <li>
-                  <i class="far fa-edit"></i>
-                  <span>All Features included</span>
-                </li>
-                <li>
-                  <i class="far fa-thumbs-up"></i>
-                  <span>Participant Dial Out</span>
-                </li>
-                <li>
-                  <i class="far fa-check-square"></i>
-                  <span>Web Interface</span>
-                </li>
-              </ul>
-              <button class="btn btn-primary">Get Started</button>
-            </div>
-
-            <!-- Pricing Table 3 -->
-            <div class="pricing__item">
-              <h1 class="heading-heading">Premium</h1>
-              <div class="price">
-                <span>$</span>
-                <h1 class="price__amount">35</h1>
-                <p>/month</p>
-              </div>
-              <ul class="features">
-                <li>
-                  <i class="far fa-user"></i>
-                  <span>5 User</span>
-                </li>
-                <li>
-                  <i class="far fa-comments"></i>
-                  <span>Basic Support</span>
-                </li>
-                <li>
-                  <i class="far fa-edit"></i>
-                  <span>All Features included</span>
-                </li>
-                <li>
-                  <i class="far fa-thumbs-up"></i>
-                  <span>Participant Dial Out</span>
-                </li>
-                <li>
-                  <i class="far fa-check-square"></i>
-                  <span>Web Interface</span>
-                </li>
-              </ul>
-              <button class="btn btn-primary">Get Started</button>
-            </div>
-          </div>
+          </section>
         </div>
       </div>
     </section>

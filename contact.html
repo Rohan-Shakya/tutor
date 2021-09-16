@@ -32,8 +32,13 @@
     />
     <meta name="keywords" content="tutor, online tutorial, online courses" />
     <meta name="subject" content="Online Tutorial and Courses" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
   </head>
-  <body>
+  <body style="overflow-x: hidden">
     <!-- ================= Header ======================= -->
     <header class="header">
       <div class="container">
@@ -139,6 +144,15 @@
     <section id="contact__form">
       <!-- <div class="container"> -->
       <div class="contact__form__container">
+        <aside class="contact__right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56542.93013682987!2d85.28813251220907!3d27.657540424516064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19d3cf18ca51%3A0xd10ec3d53656e18f!2sLalitpur!5e0!3m2!1sen!2snp!4v1629696677287!5m2!1sen!2snp"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            loading="lazy"
+          ></iframe>
+        </aside>
         <div class="contact__left">
           <h3 class="heading-tertiary">Empower Yourself</h3>
           <h1 class="heading-primary">Ask question</h1>
@@ -171,24 +185,23 @@
                 required
               />
             </div>
+            <div class="row">
+              <!-- <label for="subject">Subject</label> -->
+              <select name="subject" aria-placeholder="Subject">
+                <option value="technology">Technology</option>
+                <option value="language">Language</option>
+                <option value="science">Science</option>
+                <option value="Humanities">Humanities</option>
+                <option value="business">Business</option>
+                <option value="marketing">Marketing</option>
+              </select>
+            </div>
             <textarea name="message" placeholder="Message"></textarea>
             <button class="btn-primary">
               Send <i class="fas fa-paper-plane"></i>
             </button>
           </form>
         </div>
-
-        <aside class="contact__right">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56542.93013682987!2d85.28813251220907!3d27.657540424516064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19d3cf18ca51%3A0xd10ec3d53656e18f!2sLalitpur!5e0!3m2!1sen!2snp!4v1629696677287!5m2!1sen!2snp"
-            width="100%"
-            height="100%"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
-        </aside>
-        <!-- </div> -->
       </div>
     </section>
 
