@@ -7,6 +7,9 @@
   --primary-dark: #222a35;
   --secondary-dark: #2a323c;
   --white: #fff;
+  --default-font-family: "Poppins", sans-serif;
+  --default-font-weight: 400;
+  --default-font-size: 16px;
 }
 
 *,
